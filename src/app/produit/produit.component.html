@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    
+<!-- Mirrored from themebeyond.com/html/yed/shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Aug 2023 07:54:07 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Yed - Pharmacy & Online Medical Store HTML Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- CSS here -->
+       
+    </head>
+    <body>
+
+        <!-- Preloader -->
+        <div id="preloader">
+            <img src="img/logo/preloader.gif" alt="">
+        </div>
+        <!-- Preloader-end -->
+
+		<!-- Scroll-top -->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <i class="fas fa-angle-up"></i>
+        </button>
+        <!-- Scroll-top-end-->
+
+        <!-- header-area -->
+        <app-header></app-header>
+        <!-- header-area-end -->
+
+
+        <!-- main-are>a -->
+        <main>
+
+            <!-- breadcrumb-area -->
+            <div class="breadcrumb-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="breadcrumb-wrap">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- breadcrumb-area-end -->
+
+            <!-- shop-area -->
+            <div class="shop-area shop-inner-page pt-100 pb-100">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-3 order-2 order-lg-0">
+                            <aside class="shop-sidebar">
+                                <div class="widget">
+                                    <div class="sidebar-search">
+                                        <form action="#">
+                                            <input type="text" placeholder="Search ...">
+                                            <button type="submit"><i class="fa fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                              
+                              
+                                <div class="widget shop-widget-banner">
+                                    <a href="shop.html"><img src="img/products/shop_add.jpg" alt=""></a>
+                                </div>
+                            </aside>
+                        </div>
+                        <div class="col-9">
+                            <div class="shop-wrap">
+                                <h4 class="title">Shop</h4>
+                                
+                              
+                                <div class="row justify-content-center">
+                                    <div class="col" *ngFor="let produit of  listProduit |paginate:{itemsPerPage:2,currentPage:p}" >
+                                        <div class="shop-item mb-45">
+                                            <div class="shop-thumb">
+                                                <a href="shop-details.html"><img [src]="produit.image"  alt=""></a>
+                                            </div>
+                                            <div class="shop-content">
+                                             
+                                                <h5 class="title"><a href="shop-details.html">{{produit.nom}}</a></h5>
+                                                <div class="shop-item-rating">
+                                                    <span class="avg-rating"> 3.2 <i class="far fa-star"></i></span>
+                                                    <span class="total-rating">{{produit.description}}</span>
+                                                </div>
+                                                <p class="shop-discount"> <li style="font-size:larger;color: blue;">{{produit.prix}}dt</li> <br><span  class="discount-off">6% OFF</span></p>
+                                                
+                                                  <a   *ngIf="!isLoggedIn"> <button type="submit" class="btn"> Connexion</button></a> 
+                                                  <a   *ngIf="isLoggedIn" (click)="reserver(produit)"> <button type="submit" class="btn"> Commande</button></a> 
+                                                
+                                                <div class="shop-bottom">
+                                                    <ul>
+                                                        <li class="price">{{produit.quantite}}</li>
+                                                       
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <pagination-controls style="text-align: right;" (pageChange)="p = $event"></pagination-controls>
+                                                      </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- shop-area-end -->
+
+            <!-- core-features-area -->
+           
+            <!-- core-features-area-end -->
+
+        </main>
+        <!-- main-area-end -->
+
+        <!-- footer-area -->
+       <app-footer></app-footer>
+        <!-- footer-area-end -->
+
+
+
+        <!-- JS here -->
+        
+    </body>
+
+<!-- Mirrored from themebeyond.com/html/yed/shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Aug 2023 07:54:08 GMT -->
+</html>

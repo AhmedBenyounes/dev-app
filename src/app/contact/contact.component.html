@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    
+<!-- Mirrored from themebeyond.com/html/yed/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Aug 2023 07:54:00 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Yed - Pharmacy & Online Medical Store HTML Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+		<!-- CSS here -->
+       
+    </head>
+    <body>
+
+        <!-- Preloader -->
+        <div id="preloader">
+            <img src="img/logo/preloader.gif" alt="">
+        </div>
+        <!-- Preloader-end -->
+
+		<!-- Scroll-top -->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <i class="fas fa-angle-up"></i>
+        </button>
+        <!-- Scroll-top-end-->
+
+        <!-- header-area -->
+        <app-header></app-header>
+        <!-- header-area-end -->
+
+
+        <!-- main-area -->
+        <main>
+
+            <!-- map-area -->
+           
+            <!-- map-area-end -->
+
+            <!-- contact-area -->
+            <section class="contact-area pt-100 pb-100">
+                <div class="container">
+                    <div class="section-area-inner">
+                        <div class="row justify-content-center justify-content-lg-between">
+                            <div class="col-lg-6 col-md-8 order-2 order-lg-0">
+                                <div class="contact-title mb-20">
+                                    <h5 class="sub-title">Contact Us</h5>
+                                    <h2 class="title">Let's Talk Question<span>.</span></h2>
+                                </div>
+                                <div class="contact-wrap-content">
+                                    
+                                    <form  class="contact-form"[formGroup]="ContactForm" (ngSubmit)="addNewContact()">
+                                        <div class="form-grp">
+                                            <label for="name"> Name <span>*</span></label>
+                                            <input type="text" id="name" placeholder=""formControlName="nom">
+                                        </div>
+                                        <div class="form-grp">
+                                            <label for="email">Prenom <span>*</span></label>
+                                            <input type="text" id="" formControlName="prenom">
+                                        </div>
+                                        <div class="form-grp">
+                                            <label for="email"> Email  <span>*</span></label>
+                                            <input type="email" id="email" placeholder="info.example@.com"formControlName="email">
+                                        </div>
+                                        <div class="form-grp">
+                                            <label for="message"> Message <span>*</span></label>
+                                            <textarea name="message" id="message" placeholder="Opinion..."formControlName="message"></textarea>
+                                        </div>
+                                        <div class="form-grp">
+                                            <label for=""> telephone  <span>*</span></label>
+                                            <input type="number" id="" placeholder="********"formControlName="tel">
+                                        </div>
+                                        <div class="form-grp">
+                                            <label for="message"> Sujet <span>*</span></label>
+                                            <textarea name="message" id="message" placeholder="Opinion..."formControlName="Sujet"></textarea>
+                                        </div>
+
+                                        
+                                        <div class="form-grp checkbox-grp">
+                                            <input type="checkbox" id="checkbox">
+                                            <label for="checkbox">Don’t show your email address</label>
+                                        </div>
+                                        <button type="submit" class="btn rounded-btn">Envoyer</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-6 col-md-8">
+                                <div class="contact-info-wrap">
+                                    <div class="contact-img">
+                                        <img src="img/images/contact_img.png" alt="">
+                                    </div>
+                                    <div class="contact-info-list">
+                                        <ul>
+                                            <li>
+                                                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                                <div class="content">
+                                                  <p>Tunis</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                                                <div class="content">
+                                                    <p>72 058 903</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><i class="fas fa-envelope-open"></i></div>
+                                                <div class="content">
+                                                    <p>Parapharmacy@gmail.com</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="contact-social">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- contact-area-end -->
+
+            <!-- core-features-area -->
+          
+            <!-- core-features-area-end -->
+
+        </main>
+        <!-- main-area-end -->
+
+        <!-- footer-area -->
+       <app-footer></app-footer>
+        <!-- footer-area-end -->
+
+
+
+		<!-- JS here -->
+       
+    </body>
+
+<!-- Mirrored from themebeyond.com/html/yed/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Aug 2023 07:54:01 GMT -->
+</html>

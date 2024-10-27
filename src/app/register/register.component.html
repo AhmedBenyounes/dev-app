@@ -1,0 +1,50 @@
+<form [formGroup]="ClientForm" (ngSubmit)="addNewClient()">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="card-title">Textual inputs</h4>
+                <p class="card-title-desc">Here are examples of <code>.form-control</code> applied to
+                    each
+                    textual HTML5 <code>&lt;input&gt;</code> <code>type</code>.</p>
+
+                <div class="mb-3 row">
+                    <label for="example-text-input" class="col-md-2 col-form-label">Nom</label>
+                    <div class="col-md-10">
+                        <input formControlName="nom" class="form-control" type="text" value="" id="example-text-input">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="example-search-input" class="col-md-2 col-form-label">Prenom</label>
+                    <div class="col-md-10">
+                        <input formControlName="prenom" class="form-control" type="search" value="" id="example-search-input">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="example-email-input" class="col-md-2 col-form-label">Email</label>
+                    <div class="col-md-10">
+                        <input formControlName="email" class="form-control" type="email" value="bootstrap@example.com" placeholder="Enter Email" id="example-email-input">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="example-email-input" class="col-md-2 col-form-label">Password</label>
+                    <div class="col-md-10">
+                        <input formControlName="password" class="form-control" type="password"  placeholder="Enter password" id="example-email-input">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="example-email-input" class="col-md-2 col-form-label">tel</label>
+                    <div class="col-md-10">
+                        <input formControlName="tel" class="form-control" type="number"  placeholder="Enter tel" id="example-email-input">
+                    </div>
+                </div>
+              
+                
+              
+                <button type="submit" class="btn btn-primary">Ajouter</button>
+          
+
+            </div>
+        </div>
+    </div> 
+</form>

@@ -1,0 +1,81 @@
+<header>
+    <div id="sticky-header" class="menu-area">
+        <div class="container">
+           
+            <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+            <div class="menu-wrap">
+                <nav class="menu-nav">
+                    <div class="row align-items-center">
+                        <img src="assets/img/logo/Capture-removebg-preview (3).png" alt="logo" class="col-lg-3">
+                        <div class="col-lg-5 d-none d-lg-block">
+                            <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                <ul class="navigation">
+                                    <li class="active"><a href="/">Accueil</a></li>
+                                    <li class="menu-item-has-children"><a href="/about">A Propos</a>
+                                        
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="/produit">Produit</a>
+                                        
+                                    </li>
+                                    <li><a href="/contact">Contact</a></li>
+                                    <li *ngIf="isLoggedIn"><a href="/mecommande">Me Commande</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3">
+                            <div class="logo">
+                                <a href="index-2.html"><img src="img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-9">
+                            <div class="header-action">
+                                <ul>
+                                    
+                                  
+                                    <li class="header-shop-cart d-none d-md-flex">
+                                        <a href="/login" *ngIf="!isLoggedIn">
+                                           
+                                            <button type="submit" class="btn btn-primary">CONNECTION</button>
+                                        </a>
+                                        <a href="/register" *ngIf="!isLoggedIn">
+                                           
+                                            <button type="submit" class="btn btn-primary">REGISTER</button>
+                                        </a>
+                                        <a  (click)="logout()" *ngIf="isLoggedIn">
+                                           
+                                            <button type="submit" class="btn btn-primary">DECONNECTION</button>
+                                        </a>
+                                     
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Mobile Menu  -->
+            <div class="mobile-menu">
+                <nav class="menu-box">
+                    <div class="close-btn"><i class="fas fa-times"></i></div>
+                    <div class="nav-logo"><a href="index-2.html"><img src="img/logo/logo.png" alt="" title=""></a>
+                    </div>
+                    <div class="menu-outer">
+                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                    </div>
+                    <div class="social-links">
+                        <ul class="clearfix">
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="menu-backdrop"></div>
+            <!-- End Mobile Menu -->
+        </div>
+    </div>
+   
+</header>

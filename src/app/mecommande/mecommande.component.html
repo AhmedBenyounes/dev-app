@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    
+<!-- Mirrored from themebeyond.com/html/yed/shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Aug 2023 07:54:07 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Yed - Pharmacy & Online Medical Store HTML Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+       
+    </head>
+    <body>
+
+        <!-- Preloader -->
+        <div id="preloader">
+            <img src="img/logo/preloader.gif" alt="">
+        </div>
+        <!-- Preloader-end -->
+
+		<!-- Scroll-top -->
+    
+        <!-- Scroll-top-end-->
+
+        <!-- header-area -->
+        <app-header></app-header>
+        <!-- header-area-end -->
+
+        <table class="table" >
+            <thead>
+              <tr style="color: rgb(9, 38, 206);">
+               
+                <th scope="col">Id</th>
+                <th scope="col">Client</th>
+                <th scope="col">Commande</th>
+              </tr>
+            </thead>
+            <tbody>
+             
+              <tr *ngFor="let mecommande of listProduit">
+              
+               
+                <th>{{mecommande?.id}}</th>
+                <th>{{mecommande?.client?.nom}}</th>
+                <th>{{mecommande?.produit?.nom}}</th>
+              </tr>
+            </tbody>
+          </table>
+      
+        <!-- footer-area -->
+       <app-footer></app-footer>
+        <!-- footer-area-end -->
+
+
+
+        <!-- JS here -->
+        
+    </body>
+
+<!-- Mirrored from themebeyond.com/html/yed/shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Aug 2023 07:54:08 GMT -->
+</html>
